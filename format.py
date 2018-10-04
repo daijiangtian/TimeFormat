@@ -33,7 +33,6 @@ class TimeMat:
     def struct_time(self):
         if self.time_struct_time:
             return self.time_struct_time
-        self.time_timestamp = time.mktime(time.strptime(self.str, "%Y-%m-%d %H:%M:%S"))
         self.time_struct_time = time.localtime(self.timestamp)
         return self.time_struct_time
 
