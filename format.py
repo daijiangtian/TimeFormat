@@ -9,8 +9,7 @@
 import time
 from datetime import datetime
 
-
-class TimeMat:
+class Time:
     def __init__(self, date):
         self.time_datetime = None
         self.time_timestamp = None
@@ -74,8 +73,8 @@ if __name__ == '__main__':
     date = datetime.now()
     date = time.time()
     date = '2018-09-10 10:10:10'
-    Time = TimeMat(date)
-    print(Time.str)
-    print(Time.datetime)
-    print(Time.timestamp)
-    print(Time.struct_time)
+    date = Time(date)
+    print(date.str)
+    print(date.datetime)
+    print(date.timestamp)
+    print(date.struct_time)
